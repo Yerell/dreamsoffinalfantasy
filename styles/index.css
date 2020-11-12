@@ -1,2 +1,150 @@
 @import './normalize.css';
 @import './global.css';
+
+
+
+ody {
+	 padding: 0;
+	 margin: 0;
+	 background-color: #130d0a;
+	 font-family: 'Playfair Display', serif;
+	 color: #fff;
+}
+ #hero {
+	 height: 800px;
+	 overflow: hidden;
+	 position: relative;
+}
+ #content {
+	 background-color: #000000;
+}
+ .layer {
+	 background-position: bottom center;
+	 background-size: auto;
+	 background-repeat: no-repeat;
+	 width: 100%;
+	 height: 800px;
+	 position: fixed;
+	 z-index: -1;
+}
+ #hero-mobile {
+	 display: none;
+	 background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom / cover;
+	 height: 320px;
+}
+ .first-section {
+	 padding: 50px 0 20px 0;
+}
+ .text-header {
+	 font-size: 50px;
+	 text-align: center;
+}
+ h1 {
+	 line-height: 120%;
+	 margin-bottom: 30px;
+}
+ p {
+	 color: #ede0d5;
+	 font-size: 18px;
+	 line-height: 150%;
+}
+ #hero, .layer {
+	 min-height: 800px;
+}
+ .layer-bg {
+	 background-image: url('https://i.postimg.cc/YMLB1qtB/ff7-remake-01-bkjj8vl90.png');
+}
+ .layer-1 {
+	 background-image: url('https://lh3.googleusercontent.com/proxy/ybPzs8shUGLwfrGTdMGBW4qncqu8UKWPAOBuKVaRyxBmHxGOwYGw5kE9ebS9TYVHY0FftYR9Ti-UdxleNFYZDQpysR-Q5ThYFH___5RYCxqu2UQG10S88gImCmrVJfdNj6WLJTtz6S8XUBn4fMii068');
+	 background-position: left bottom;
+}
+ .layer-2 {
+   background-image: url('https://i.postimg.cc/9fS9ZG7z/Final-Fantasy-Logo-PNG-Transparent-white-Image.png');
+   background-position: center;
+  
+}
+ .layer-3 {
+   background-image: url('https://lh3.googleusercontent.com/proxy/hkXOGLIPm6p6chEQcApzRMVMZ1UYHjbhX9UlEruEKAk-l0rFKZhLWZlyopSogA7dODX2obC0OcKrp1ciwt4WAccmEI0Y6xc7c8fHL0vy_1idMozYoVDundasgnRaL9_Y7IS2IEZ6');
+	 background-position: right bottom;
+}
+ .layer-4 {
+	 background-image: url('-');
+}
+ .layer-overlay {
+	 background-image: url('-);
+}
+ @media only screen and (max-width: 768px) {
+	 #hero {
+		 display: none;
+	}
+	 #hero-mobile {
+		 display: block;
+	}
+}
+ .tutorial-link {
+	 color: #fff;
+	 font-size: 18px;
+	 text-decoration: underline;
+}
+ .tutorial-link:hover {
+	 color: #ede0d5;
+}
+ }
+
+
+/*
+.webmadewell {
+  background-color: white;
+}
+body {
+  margin: 0;
+}
+.sample-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: url("https://images.hdqwalls.com/wallpapers/final-fantasy-xv-windows-edition-4k-i7.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sample-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: MidnightBlue;
+  opacity: 0.3;
+}
+.sample-header-section {
+  position: relative;
+  padding: 15% 0 10%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-weight: 500;
+}
+h2 {
+  font-weight: 400;
+}
+.sample-section-wrap {
+  position: relative;
+  background-color: white;
+}
+.sample-section {
+  position: relative;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+*/
