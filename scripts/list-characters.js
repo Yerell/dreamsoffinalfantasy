@@ -26,7 +26,7 @@ const renderCharacters = async (event) => {
     const descriptionText = clone.querySelector('#description');
 
     h2.innerText = name;
-    img.setAttribute('src', pictures);
+    img.setAttribute('src', pictures.url);
     img.setAttribute('alt', name);
     japaneseNameText.innerText = japaneseName;
     originText.innerText = origin;
