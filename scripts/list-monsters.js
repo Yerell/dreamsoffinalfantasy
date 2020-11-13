@@ -15,8 +15,9 @@ const renderMonsters = async (event) => {
     const h2 = clone.querySelector('h2');
     const img = clone.querySelector('img');
     const japaneseNameText = clone.querySelector('#japaneseName');
+    const elementalAffinityText = clone.querySelector('#elementalAffinity');
     const elementalWeaknessText = clone.querySelector('#elementalWeakness');
-    const hitpointsText = clone.querySelector('#hitPoints');
+    const hitPointsText = clone.querySelector('#hitPoints');
     const manaPointsText = clone.querySelector('#manaPoints');
     const attackText = clone.querySelector('#attack');
     const defenseText = clone.querySelector('#defense');
@@ -26,9 +27,9 @@ const renderMonsters = async (event) => {
     img.setAttribute('src', picture);
     img.setAttribute('alt', name);
     japaneseNameText.innerText = japaneseName;
-    elementalAffinity.innerText = elementalAffinity;
+    elementalAffinityText.innerText = elementalAffinity;
     elementalWeaknessText.innerText = elementalWeakness;
-    hitpointsText.innerText = hitPoints;
+    hitPointsText.innerText = hitPoints;
     manaPointsText.innerText = manaPoints;
     attackText.innerText = attack;
     defenseText.innerText = defense;

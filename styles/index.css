@@ -1,2 +1,246 @@
 @import './normalize.css';
 @import './global.css';
+
+
+body {
+	 padding: 0;
+	 margin: 0;
+	 background-color: #000000;
+	 font-family: 'Playfair Display', serif;
+	 color: #fff;
+}
+ #hero {
+	 height: 800px;
+	 overflow: hidden;
+	 position: relative;
+}
+ #content {
+	 background-color: #000000;
+}
+ .layer {
+	 background-position: bottom center;
+	 background-size: auto;
+	 background-repeat: no-repeat;
+	 width: 100%;
+	 height: 800px;
+	 position: fixed;
+	 z-index: -1;
+}
+ #hero-mobile {
+	 display: none;
+	 background: url("https://i.postimg.cc/4f7Mc74j/baneer-dreams-of-ff.png") no-repeat center bottom / cover;
+	 height: 320px;
+}
+ .first-section {
+	 padding: 50px 0 20px 0;
+}
+ .text-header {
+	 font-size: 50px;
+	 text-align: center;
+}
+ h1 {
+   text-align: center;
+	 line-height: 120%;
+	 margin-bottom: 1px;
+}
+ p {
+   padding-top: 1px;
+   color: #ede0d5;
+	 font-size: 18px;
+   line-height: 150%;
+   margin-top: 2px;
+}
+
+
+
+ #hero, .layer {
+	 min-height: 800px;
+}
+ .layer-bg {
+	 background-image: url('https://i.postimg.cc/YMLB1qtB/ff7-remake-01-bkjj8vl90.png');
+}
+ .layer-1 {
+	 background-image: url('https://lh3.googleusercontent.com/proxy/ybPzs8shUGLwfrGTdMGBW4qncqu8UKWPAOBuKVaRyxBmHxGOwYGw5kE9ebS9TYVHY0FftYR9Ti-UdxleNFYZDQpysR-Q5ThYFH___5RYCxqu2UQG10S88gImCmrVJfdNj6WLJTtz6S8XUBn4fMii068');
+	 background-position: left bottom;
+}
+ .layer-2 {
+   background-image: url('https://i.postimg.cc/6pkVJSr6/Final-Fantasy-Logo-PNG-Transparent-white-LARGER-Image.png');
+   background-position: center top;
+  
+}
+ .layer-3 {
+   background-image: url('https://lh3.googleusercontent.com/proxy/hkXOGLIPm6p6chEQcApzRMVMZ1UYHjbhX9UlEruEKAk-l0rFKZhLWZlyopSogA7dODX2obC0OcKrp1ciwt4WAccmEI0Y6xc7c8fHL0vy_1idMozYoVDundasgnRaL9_Y7IS2IEZ6');
+	 background-position: right bottom ;
+}
+ .layer-4 {
+	 background-image: url('-');
+ background-position: bottom ;
+  }
+ .layer-overlay {
+	 background-image: url ('-') ;
+}
+
+ @media only screen and (max-width: 768px) {
+	 #hero {
+		 display: none;
+	}
+	 #hero-mobile {
+		 display: block;
+	}
+}
+.platform{
+  
+}
+
+
+footer {
+  bottom: 0;
+  left: 0;
+  position: relative;
+  right: 0;
+}
+footer div.social-media-links {
+  	background-color: #123;
+    height: 70px;
+  overflow: hidden;
+  padding-bottom: 4px;
+  text-align: center;
+  color:black;
+	background-image: linear-gradient(to bottom, rgb(255, 255, 255), transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px rgba(125, 243, 214, 0.705);
+	font-size: 1.5em;
+	font-weight: 300;
+}
+footer div.social-media-links ul {
+  margin: 0;
+  padding: 0;
+}
+footer div.social-media-links li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+footer div.social-media-links a {
+  border-bottom: 0px solid rgba(0, 0, 0, 0.95);
+  border-radius: 4px;
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0), 0 6px 8px rgba(0, 0, 0, 0), 0 24px 24px rgba(0, 0, 0, 0), 0 36px 36px rgba(0, 0, 0, 0), 0 64px 64px rgba(0, 0, 0, 0), 0 64px 128px rgba(0, 0, 0, 0), 0 120px 0 rgba(0, 0, 0, 0), 0 86px 8px 6px rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 20px;
+  padding: 20px;
+  position: relative;
+  transition: 0.2s ease-in;
+  width: 30px;
+}
+footer div.social-media-links a svg {
+  left: 20px;
+  position: absolute;
+  top: 20px;
+  height: 30px;
+  width: 30px;
+}
+footer div.social-media-links a svg.glow path,
+footer div.social-media-links a svg.glow circle {
+  fill: rgba(0, 0, 0, 0);
+}
+footer div.social-media-links a svg path,
+footer div.social-media-links a svg circle {
+  fill: #000000;
+  transition: 0.2s ease-in;
+}
+footer div.social-media-links a:hover {
+  transform: translateY(-4px);
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.05), 0 24px 24px rgba(0, 0, 0, 0.05), 0 36px 36px rgba(0, 0, 0, 0.05), 0 64px 64px rgba(0, 0, 0, 0.15), 0 64px 128px rgba(0, 0, 0, 0.15), 0 86px 8px 6px rgba(14, 186, 199, 0.25), 0 83px 4px 0px rgba(14, 186, 199, 0.95);
+}
+footer div.social-media-links a:hover svg.glow {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+  filter: blur(2px);
+}
+footer div.social-media-links a:hover svg.glow path,
+footer div.social-media-links a:hover svg.glow circle {
+  fill: rgba(125, 207, 212, 0.6);
+}
+footer div.social-media-links a:hover svg path,
+footer div.social-media-links a:hover svg circle {
+  fill:  rgba(125, 243, 214, 0.705);
+}
+
+.ff1 {
+margin-right: 20px;
+padding-bottom: 30px;
+height: 50%;
+width: 50%;
+
+}
+
+.fflogo {
+position: relative;
+padding-top: 30px;
+height: 30%;
+width: 30%;
+
+}
+
+
+/* Appearance */
+.links {
+	background-color: #123;
+	background-image: linear-gradient(to bottom, rgb(255, 255, 255), transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px rgba(125, 243, 214, 0.705);
+	font-size: 1.5em;
+	font-weight: 300;
+}
+.links > a {
+	color: rgb(0, 0, 0);
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.links > a:hover {
+	background: #ffffff06;
+	color: #adf;
+}
+.links > .line {
+	background: #68a;
+	height: 1px;
+	pointer-events: none;
+}
+
+/* The Magic */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.links > a:hover ~ .line {
+	opacity: 1;
+}
+
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
