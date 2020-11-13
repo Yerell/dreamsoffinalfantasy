@@ -5,110 +5,366 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
     <title>Dreams of Final Fantasy</title>
+    <style>
+simplescrollup__button {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    transition: 1s all;
+    z-index: 10000;
+}
+.simplescrollup__button--show {
+    transform: translateX(0);
+}
+.simplescrollup__button--hide {
+    transform: translateX(100px);
+}
+
+    </style>
   </head>
+
   <body>
     <header>
-      <div id='hero'>
-  <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
-   <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
-  <div class='layer-1 layer' data-depth='0.80' data-type='parallax'></div>
-  <div class='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
-  <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
-  <div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
-</div>
-<div id='hero-mobile'></div>
-	<nav class="links" style="--items: 5;">
-		<a href="./">Home</a>
-		<a href="./pages/games">Games</a>
-		<a href="./pages/characters">Characters</a>
-		<a href="./pages/monsters">Monsters</a>
-		<a href="https://na.finalfantasy.com/">Website</a>
-		<span class="line"></span>
-	</nav>
+      <div id="hero">
+        <div
+          class="layer-bg layer"
+          data-depth="0.10"
+          data-type="parallax"
+        ></div>
+        <div class="layer-2 layer" data-depth="0.50" data-type="parallax"></div>
+        <div class="layer-1 layer" data-depth="0.70" data-type="parallax"></div>
+        <div class="layer-3 layer" data-depth="0.70" data-type="parallax"></div>
+        <div class="layer-overlay layer" data-depth="0.85"data-type="parallax"></div>
+        <div class="layer-4 layer" data-depth="1.00" data-type="parallax"></div>
+      </div>
+      <div id="hero-mobile"></div>
+      <nav class="links" style="--items: 5">
+        <a href="/">Home</a>
+        <a href="/pages/games">Games</a>
+        <a href="/pages/characters">Characters</a>
+        <a href="/pages/monsters">Monsters</a>
+        <a href="https://na.finalfantasy.com/" target="_blank">Website</a>
+        <span class="line"></span>
+      </nav>
     </header>
 
-
-<div id='content'>
-  <div class='container'>
-    <section class='first-section'>
-      <div class='row'>
-
-        <div class='col-sm-6'>
-          <h1>The legacy of the Warriors of Light awaits you.</h1>
-      <div class='row'>
-        <div class='col-sm-6'>
-         <blockquote class="pull-quote"><p class="pull-quote__text"><i>After switching over to the Famicom, there was a time when I wasn't happy with anything I was creating. I thought of retiring from the game industry and I created Final Fantasy as my final project. That's why the title includes the word 'final' but for me, the title 'Final Fantasy' reflects my emotional state at the time and the feeling that time had stopped. They say that technologically, it's good to keep going, and each time, we give it our all and expend our skills and energy until we can go no further; this is what I consider to be the 'final fantasy'.</i></p><p><cite class="pull-quote__source">Hironobu Sakaguchi<sup id="cite_ref-FF_25th_Anniversary_1-0" class="reference"></a></sup></cite></p></blockquote></div>
-          <img class="ff1" src="https://www.hypestation.es/wp-content/uploads/2018/01/FF_art-1024x576.jpg" style="padding-left:40px"></img>
-         <p style="padding-left:20px"><i><b>Final Fantasy</b></i> is a video game franchise developed and published by Square Enix</a>. It is a Japanese role-playing game series with varying gameplay, settings and stories between each installment, retaining plot and gameplay elements throughout, focusing on fantasy and science fantasy settings. Though the core series is a role-playing game franchise, it has branched into other genres, such as MMORPGs, tactical role-playing games, action role-playing games, and fighting games. The series has been distributed on many platforms, beginning with the Nintendo Entertainment System, and including consoles, computers, mobile operating systems and game streaming services. The series has also branched into other forms of media, particularly films, novels, and manga.</p>
-      <img class="ff1" src="https://socksmakepeoplesexy.net/images/ff/screen2.png" style="padding-left:40px"></img>
-         <p style="padding-left:20px">Three Final Fantasy installments were released on the Nintendo Entertainment System (NES). Final Fantasy was released in Japan in 1987 and in North America in 1990. It introduced many concepts to the console RPG genre, and has since been remade on several platforms. Final Fantasy II, released in 1988 in Japan, has been bundled with Final Fantasy in several re-releases. The last of the NES installments, Final Fantasy III, was released in Japan in 1990; however, it was not released elsewhere until a Nintendo DS remake in 2006.The Super Nintendo Entertainment System (SNES) also featured three installments of the main series, all of which have been re-released on several platforms. Final Fantasy IV was released in 1991; in North America, it was released as Final Fantasy II. It introduced the "Active Time Battle" system. Final Fantasy V, released in 1992 in Japan, was the first game in the series to spawn a sequel: a short anime series, Final Fantasy: Legend of the Crystals.Final Fantasy VI was released in Japan in 1994, titled Final Fantasy III in North America.</p>
-     <img class="ff1" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2018/03/analisis-final-fantasy-vii-playstation.jpg" style="padding-left:40px"></img>
-         <p style="padding-left:20px">The PlayStation console saw the release of three main Final Fantasy games. Final Fantasy VII (1997) moved away from the two-dimensional  graphics used in the first six games to three-dimensional  computer graphics; the game features polygonal characters on pre-rendered backgrounds. It also introduced a more modern setting, a style that was carried over to the next game. It was also the second in the series to be released in Europe, with the first being Final Fantasy Mystic Quest. Final Fantasy VIII was published in 1999, and was the first to consistently use realistically proportioned characters and feature a vocal piece as its theme music. Final Fantasy IX, released in 2000, returned to the series' roots by revisiting a more traditional Final Fantasy setting rather than the more modern worlds of VII and VIII.</p>
-      <img class="ff1" src="https://cdn02.nintendo-europe.com/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_finalfantasyxx2hdremaster/NSwitch_FinalFantasyXX2HDRemaster_01.jpg" style="padding-left:40px"></img>
-      <p style="padding-left:20px">Three main installments, as well as one online game, were published for the PlayStation 2 (PS2). Final Fantasy X (2001) introduced full 3D areas and voice acting to the series, and was the first to spawn a sub-sequel (Final Fantasy X-2, published in 2003). The first massively multiplayer online role-playing game (MMORPG) in the series, Final Fantasy XI, was released on the PS2 and PC in 2002, and later on the Xbox 360. It introduced real-time battles instead of random encounters. Final Fantasy XII, published in 2006, also includes real-time battles in large, interconnected playfields. The game is also the first in the main series to utilize a world used in a previous game, namely the land of Ivalice, which had previously featured in Final Fantasy Tactics and Vagrant Story.</p>
-       <img class="ff1" src=https://www.cgmagonline.com/wp-content/uploads/2014/03/reidFFXIIIheader1.jpg" style="padding-left:40px"></img>
-      <p style="padding-left:20px">In 2009, Final Fantasy XIII was released in Japan, and in North America and Europe the following year, for PlayStation 3 and Xbox 360. It is the flagship installment of the Fabula Nova Crystallis Final Fantasy series and became the first mainline game to spawn two sub-sequels (XIII-2 and Lightning Returns). It was also the first game released in Chinese and high definition along with being released on two consoles at once. Final Fantasy XIV, a MMORPG, was released worldwide on Microsoft Windows in 2010, but it received heavy criticism when it was launched, prompting Square Enix to rerelease the game as Final Fantasy XIV: A Realm Reborn, this time to the PlayStation 3 as well, in 2013. Final Fantasy XV is an action role-playing game that was released for PlayStation 4 and Xbox One in 2016. Originally a XIII spin-off titled Versus XIII, XV uses the mythos of the Fabula Nova Crystallis series, although in many other respects the game stands on its own and has since been distanced from the series by its developers.The next mainline entry, Final Fantasy XVI, was announced in September 2020 for the PlayStation 5.</p>
- <img class="ff1" src="https://cache-na.finalfantasy.com/uploads/content/file/2020/10/29/11162/201029_ffxvi.jpg" style="padding-left:40px"></img>
-        
-        </div>
-    </section>
-  </div>
-</div>
-    
+    <main class="home">
+      <article>
+        <header>
+          <h1></h1>
+          <picture>
+            <img
+              src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Folliebarder%2Ffiles%2F2017%2F06%2Fsakaguchi_headshot_interview-1200x1266.jpg"
+              alt="Hironobu Sakaguchi"
+            />
+          </picture>
+          <blockquote class="pull-quote">
+            <p class="pull-quote__text">
+              <i
+                >After switching over to the Famicom, there was a time when I
+                wasn't happy with anything I was creating. I thought of retiring
+                from the game industry and I created Final Fantasy as my final
+                project. That's why the title includes the word 'final' but for
+                me, the title 'Final Fantasy' reflects my emotional state at the
+                time and the feeling that time had stopped. They say that
+                technologically, it's good to keep going, and each time, we give
+                it our all and expend our skills and energy until we can go no
+                further; this is what I consider to be the 'final fantasy'.</i
+              >
+            </p>
+            <p>
+              <cite class="pull-quote__source">Hironobu Sakaguchi</cite>
+            </p>
+          </blockquote>
+        </header>
+        <section>
+          <picture>
+            <img
+              class="ff1"
+              src="https://i.pinimg.com/originals/6d/3c/cc/6d3ccc1371c4f44c3b3eb4d5ca58bbe7.jpg"
+            />
+          </picture>
+          <p>
+            <i>
+              <b>Final Fantasy</b>
+            </i>
+            is a video game franchise developed and published by Square Enix. It
+            is a Japanese role-playing game series with varying gameplay,
+            settings and stories between each installment, retaining plot and
+            gameplay elements throughout, focusing on fantasy and science
+            fantasy settings. Though the core series is a role-playing game
+            franchise, it has branched into other genres, such as MMORPGs,
+            tactical role-playing games, action role-playing games, and fighting
+            games. The series has been distributed on many platforms, beginning
+            with the Nintendo Entertainment System, and including consoles,
+            computers, mobile operating systems and game streaming services. The
+            series has also branched into other forms of media, particularly
+            films, novels, and manga.
+          </p>
+        </section>
+        <section>
+          <picture>
+            <img
+              class="ff1"
+              src="https://legendsoflocalization.com/media/final-fantasy-iv/mt-ordeals/fallflat-j.png"
+            />
+          </picture>
+          <p>
+            Three Final Fantasy installments were released on the Nintendo
+            Entertainment System (NES). Final Fantasy was released in Japan in
+            1987 and in North America in 1990. It introduced many concepts to
+            the console RPG genre, and has since been remade on several
+            platforms. Final Fantasy II, released i n 1988 in Japan, has been
+            bundled with Final Fantasy in several re-releases. The last of the
+            NES installments, Final Fantasy III, was released in Japan in 1990;
+            however, it was not released elsewhere until a Nintendo DS remake in
+            2006.The Super Nintendo Entertainment System (SNES) also featured
+            three installments of the main series, all of which have been
+            re-released on several platforms. Final Fantasy IV was released in
+            1991; in North America, it was released as Final Fantasy II. It
+            introduced the "Active Time Battle" system. Final Fantasy V,
+            released in 1992 in Japan, was the first game in the series to spawn
+            a sequel: a short anime series, Final Fantasy: Legend of the
+            Crystals.Final Fantasy VI was released in Japan in 1994, titled
+            Final Fantasy III in North America.
+          </p>
+        </section>
+          <section>
+          <picture>
+            <img
+              class="ff1"
+              src="https://cdn.vox-cdn.com/thumbor/Q5UvAXntA7bDVdNM_-7iRbA8vTg=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19899695/ply_cloudff_grading.jpg"
+            />
+          </picture>
+          <p>
+            The PlayStation console saw the release of three main Final Fantasy games.
+            Final Fantasy VII (1997) moved away from the two-dimensional (2D) graphics
+            used in the first six games to three-dimensional (3D) computer graphics; 
+            the game features polygonal characters on pre-rendered backgrounds. 
+            It also introduced a more modern setting, a style that was carried over
+            to the next game. It was also the second in the series to be released in 
+            Europe, with the first being Final Fantasy Mystic Quest. 
+            Final Fantasy VIII was published in 1999, and was the first to consistently 
+            use realistically proportioned characters and feature a vocal piece as its
+            theme music Final Fantasy IX, released in 2000, returned to the series
+            roots by revisiting a more traditional Final Fantasy setting rather than 
+            the more modern worlds of VII and VIII.
+          </p>
+        </section>
+        <section>
+          <picture>
+            <img
+              class="ff1"
+              src="http://www.hdfondos.eu/preview/get_photo/654125/1024/1024"
+            />
+          </picture>
+          <p>
+            Three main installments, as well as one online game, were published
+            for the PlayStation 2 (PS2). Final Fantasy X (2001) introduced full
+            3D areas and voice acting to the series, and was the first to spawn
+            a sub-sequel (Final Fantasy X-2, published in 2003). The first
+            massively multiplayer online role-playing game (MMORPG) in the
+            series, Final Fantasy XI, was released on the PS2 and PC in 2002,
+            and later on the Xbox 360. It introduced real-time battles instead
+            of random encounters. Final Fantasy XII, published in 2006, also
+            includes real-time battles in large, interconnected playfields. The
+            game is also the first in the main series to utilize a world used in
+            a previous game, namely the land of Ivalice, which had previously
+            featured in Final Fantasy Tactics and Vagrant Story.
+          </p>
+        </section>
+        <section>
+          <picture>
+            <img
+              class="ff1"
+              src="https://image.api.playstation.com/vulcan/img/cfn/11307aqUE9WQSDU42B8slHr5VzVSGAOIN92pXV149_U_AwqcgOjXPcK3YYCwytgilX4_91DXwBYTYNTd94cq6RWbif8w8s-9.png"
+            />
+          </picture>
+          <p>
+            In 2009, Final Fantasy XIII was released in Japan, and in North
+            America and Europe the following year, for PlayStation 3 and Xbox
+            360. It is the flagship installment of the Fabula Nova Crystallis
+            Final Fantasy series and became the first mainline game to spawn two
+            sub-sequels (XIII-2 and Lightning Returns). It was also the first
+            game released in Chinese and high definition along with being
+            released on two consoles at once. Final Fantasy XIV, a MMORPG, was
+            released worldwide on Microsoft Windows in 2010, but it received
+            heavy criticism when it was launched, prompting Square Enix to
+            rerelease the game as Final Fantasy XIV: A Realm Reborn, this time
+            to the PlayStation 3 as well, in 2013. Final Fantasy XV is an action
+            role-playing game that was released for PlayStation 4 and Xbox One
+            in 2016. Originally a XIII spin-off titled Versus XIII, XV uses the
+            mythos of the Fabula Nova Crystallis series, although in many other
+            respects the game stands on its own and has since been distanced
+            from the series by its developers.The next mainline entry, Final
+            Fantasy XVI, was announced in September 2020 for the PlayStation 5.
+          </p>
+        </section>
+        <section>
+          <picture>
+            <img
+              class="ff2"
+              src="https://media.vandal.net/i/1200x630/90446/final-fantasy-xvi-20209178205046_1.jpg"
+            />
+             <p>
+Final Fantasy has been very influential in the history of video game mechanics. 
+Final Fantasy IV is considered a milestone for the genre, introducing a dramatic
+storyline with a strong emphasis on character development and personal relationships.
+Final Fantasy VII is credited as having the largest industry impact of the series, 
+and with allowing console role-playing games to gain mass-market appeal. 
+Final Fantasy VII is considered to be one of the most important and influential
+video games of all time.
+The series affected Square's business on several levels. The commercial failure of
+ Final Fantasy: The Spirits Within resulted in hesitation and delays from Enix
+  during merger discussions with Square. Square's decision to produce 
+  games exclusively for the Sony PlayStation—a move followed by Enix's decision with
+   the Dragon Quest series—severed their relationship with Nintendo. Final Fantasy games
+    were absent from Nintendo consoles, specifically the Nintendo 64, for seven years. 
+    Critics attribute the switch of strong third-party games like the Final Fantasy and 
+    Dragon Quest games to Sony's PlayStation, and away from the Nintendo 64, as one of
+     the reasons behind PlayStation being the more successful of the two consoles. 
+     The release of the Nintendo GameCube, which used optical disc media, in 2001 
+     caught the attention of Square. To produce games for the system, Square created 
+     the shell company The Game Designers Studio and released Final Fantasy Crystal Chronicles,
+      which spawned its own metaseries within the main franchise. Final Fantasy XI's 
+      lack of an online method of subscription cancellation prompted the creation of legislation 
+      in Illinois that requires internet gaming services to provide such a method to the state's residents.
+The series' popularity has resulted in its appearance and reference in numerous facets of
+ popular culture like anime, TV series, and webcomics.Music from the
+  series has permeated into different areas of culture. Final Fantasy IV's
+  "Theme of Love" was integrated into the curriculum of Japanese school children
+   and has been performed live by orchestras and metal bands. In 2003, Uematsu
+    co-founded The Black Mages, an instrumental rock group independent of Square
+     that has released albums of arranged Final Fantasy tunes. Bronze medalists
+      Alison Bartosik and Anna Kozlova performed their synchronized swimming routine
+       at the 2004 Summer Olympics to music from Final Fantasy VIII. Many of the
+        soundtracks have also been released for sale. Numerous companion books, which
+         normally provide in-depth game information, have been published. In Japan, 
+         they are published by Square and are called Ultimania books.
+The series has inspired numerous game developers. Fable creator Peter Molyneux considers 
+Final Fantasy VII to be the RPG that "defined the genre" for him. BioWare founder 
+Greg Zeschuk cited Final Fantasy VII as "the first really emotionally engaging game" 
+he played and said it had "a big impact" on BioWare's work. The Witcher 3 senior 
+environmental artist Jonas Mattsson cited Final Fantasy as "a huge influence" and said it
+ was "the first RPG" he played through. Mass Effect art director Derek Watts 
+ cited Final Fantasy: The Spirits Within as a major influence on the visual design 
+ and art direction of the series. BioWare senior product manager David Silverman 
+ cited Final Fantasy XII's gambit system as an influence on the gameplay of Dragon Age: Origins.
+ Ubisoft Toronto creative director Maxime Beland cited the original Final Fantasy
+  as a major influence on him. Media Molecule's Constantin Jupp credited
+   Final Fantasy VII with getting him into game design. Tim Schafer also cited 
+   Final Fantasy VII as one of his favourite games of all time.
+          </p>
+          </picture>
+        </section>
+     <h2 class="chocobo">
+  <a class="" href="#up" ><img src="https://i.pinimg.com/originals/f9/e0/71/f9e071789e54e5e55aa18ab6d68d2635.png" alt="chocobo" /></a>
+  <script src="simplescrollup.js"></script>
+  </h2>
+      </article>
+    </main>
     <footer>
-    <div class="social-media-links">
-      <ul>Final fantasy is a trademark of Square Enix© This fansite was made in HTML, CSS and JavaScript by Yerell Bernardino Murillo. 
-        <li>
-          <!-- twitter -->
-          <a href="#">
-            <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path class="st0" d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path class="st0" d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1"/>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <!-- facebook -->
-          <a href="#">
-            <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path class="st0" d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path class="st0" d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z"/>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <!-- youtube -->
-          <a href="#">
-            <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path class="st0" d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path class="st0" d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z"/>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <!-- instagram -->
-          <a href="#">
-            <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path class="st0" d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z"/>
-              <path class="st0" d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z"/>
-              <circle class="st0" cx="22.9" cy="7.1" r="1.8"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path class="st0" d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z"/>
-              <path class="st0" d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z"/>
-              <circle class="st0" cx="22.9" cy="7.1" r="1.8"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+      <div class="social-media-links">
+        <ul>
+          Final fantasy is a trademark of Square Enix© This fansite was made in
+          HTML, CSS and JavaScript by Yerell Bernardino Murillo.
+          <li>
+            <!-- twitter -->
+            <a href="#">
+              <svg
+                class="glow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="st0"
+                  d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <path
+                  class="st0"
+                  d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <!-- facebook -->
+            <a href="#">
+              <svg
+                class="glow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="st0"
+                  d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <path
+                  class="st0"
+                  d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <!-- youtube -->
+            <a href="#">
+              <svg
+                class="glow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="st0"
+                  d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <path
+                  class="st0"
+                  d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <!-- instagram -->
+            <a href="#">
+              <svg
+                class="glow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  class="st0"
+                  d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z"
+                />
+                <path
+                  class="st0"
+                  d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z"
+                />
+                <circle class="st0" cx="22.9" cy="7.1" r="1.8" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <path
+                  class="st0"
+                  d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z"
+                />
+                <path
+                  class="st0"
+                  d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z"
+                />
+                <circle class="st0" cx="22.9" cy="7.1" r="1.8" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="./scripts/index.js" type="module"></script>
   </body>
 </html>
