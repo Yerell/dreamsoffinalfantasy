@@ -10,7 +10,22 @@ const renderCharacters = async (event) => {
   const characters = await getAllCharacters();
 
   characters.forEach((character) => {
-    const { name, japaneseName, pictures, origin, race, gender, age, job, height, weight, stats, description } = character;
+    console.log({ character });
+
+    const {
+      name,
+      japaneseName,
+      pictures,
+      origin,
+      race,
+      gender,
+      age,
+      job,
+      height,
+      weight,
+      stats,
+      description,
+    } = character;
     const clone = template.content.cloneNode(true);
     const h2 = clone.querySelector('h2');
     const img = clone.querySelector('img');
@@ -20,7 +35,7 @@ const renderCharacters = async (event) => {
     const descriptionText = clone.querySelector('#description');
 
     h2.innerText = name;
-    img.setAttribute('src', pictures.url);
+    img.setAttribute('src', pictures[0].url);
     img.setAttribute('alt', name);
     japaneseNameText.innerText = japaneseName;
     originText.innerText = origin;
