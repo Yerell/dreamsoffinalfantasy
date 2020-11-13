@@ -3,6 +3,9 @@
 @import './header.css';
 @import './home.css';
 @import './footer.css';
+@import './games.css';
+@import './characters.css';
+@import './monsters.css';
 
 #content {
   background-color: #000000;
