@@ -29,19 +29,23 @@
   background-image: url('https://i.postimg.cc/YMLB1qtB/ff7-remake-01-bkjj8vl90.png');
 }
 .layer-1 {
-  background-image: url('https://lh3.googleusercontent.com/proxy/ybPzs8shUGLwfrGTdMGBW4qncqu8UKWPAOBuKVaRyxBmHxGOwYGw5kE9ebS9TYVHY0FftYR9Ti-UdxleNFYZDQpysR-Q5ThYFH___5RYCxqu2UQG10S88gImCmrVJfdNj6WLJTtz6S8XUBn4fMii068');
+  background-image: url('https://cache-eu.finalfantasy.com/uploads/content/file/2020/06/29/3103/200717_topics_ff7r_4_2.png');
   background-position: left bottom;
+  background-size: 50%;
+  margin-left: -14%;
 }
 .layer-2 {
   background-image: url('https://i.postimg.cc/6pkVJSr6/Final-Fantasy-Logo-PNG-Transparent-white-LARGER-Image.png');
   background-position: center top;
 }
 .layer-3 {
-  background-image: url('https://lh3.googleusercontent.com/proxy/hkXOGLIPm6p6chEQcApzRMVMZ1UYHjbhX9UlEruEKAk-l0rFKZhLWZlyopSogA7dODX2obC0OcKrp1ciwt4WAccmEI0Y6xc7c8fHL0vy_1idMozYoVDundasgnRaL9_Y7IS2IEZ6');
+  background-image: url('https://lh3.googleusercontent.com/proxy/V7zOswnxkcnQRFsl1px2ujsX2roE0LkCMerhsF8hcI7S0OzwIr2neQpIa0JIwByB942UICq7QoRY5iDI_4sBG-vHh87k63b2BVmhjXjXzJjL_LR-GuUwLl9JsOL3pXvuZtlH7GrL');
   background-position: right bottom;
+  background-size: 37%;
+   margin-left: 9%;
 }
 .layer-4 {
-  background-image: url('-');
+  background-image: url('');
   background-position: bottom;
 }
 .layer-overlay {

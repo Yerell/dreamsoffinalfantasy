@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
     <title>Dreams of Final Fantasy</title>
+    <style>
+simplescrollup__button {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    transition: 1s all;
+    z-index: 10000;
+}
+.simplescrollup__button--show {
+    transform: translateX(0);
+}
+.simplescrollup__button--hide {
+    transform: translateX(100px);
+}
+
+    </style>
   </head>
 
   <body>
@@ -16,13 +32,9 @@
           data-type="parallax"
         ></div>
         <div class="layer-2 layer" data-depth="0.50" data-type="parallax"></div>
-        <div class="layer-1 layer" data-depth="0.80" data-type="parallax"></div>
-        <div class="layer-3 layer" data-depth="0.80" data-type="parallax"></div>
-        <div
-          class="layer-overlay layer"
-          data-depth="0.85"
-          data-type="parallax"
-        ></div>
+        <div class="layer-1 layer" data-depth="0.70" data-type="parallax"></div>
+        <div class="layer-3 layer" data-depth="0.70" data-type="parallax"></div>
+        <div class="layer-overlay layer" data-depth="0.85"data-type="parallax"></div>
         <div class="layer-4 layer" data-depth="1.00" data-type="parallax"></div>
       </div>
       <div id="hero-mobile"></div>
@@ -31,7 +43,7 @@
         <a href="/pages/games">Games</a>
         <a href="/pages/characters">Characters</a>
         <a href="/pages/monsters">Monsters</a>
-        <a href="https://na.finalfantasy.com/">Website</a>
+        <a href="https://na.finalfantasy.com/" target="_blank">Website</a>
         <span class="line"></span>
       </nav>
     </header>
@@ -245,13 +257,12 @@ environmental artist Jonas Mattsson cited Final Fantasy as "a huge influence" an
           </p>
           </picture>
         </section>
-        <img
-              class="ff3"
-              src="https://i.pinimg.com/originals/f9/e0/71/f9e071789e54e5e55aa18ab6d68d2635.png"
-            />
+     <h2 class="chocobo">
+  <a class="" href="#up" ><img src="https://i.pinimg.com/originals/f9/e0/71/f9e071789e54e5e55aa18ab6d68d2635.png" alt="chocobo" /></a>
+  <script src="simplescrollup.js"></script>
+  </h2>
       </article>
     </main>
-
     <footer>
       <div class="social-media-links">
         <ul>
