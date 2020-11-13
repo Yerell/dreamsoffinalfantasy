@@ -16,13 +16,7 @@ const renderCharacters = async (event) => {
     const img = clone.querySelector('img');
     const japaneseNameText = clone.querySelector('#japaneseName');
     const originText = clone.querySelector('#origin');
-    const raceText = clone.querySelector('#race');
-    const genderText = clone.querySelector('#gender');
-    const ageText = clone.querySelector('#age');
     const jobText = clone.querySelector('#job');
-    const heightText = clone.querySelector('#height');
-    const weightText = clone.querySelector('#weight');
-    const statsText = clone.querySelector('#stats');
     const descriptionText = clone.querySelector('#description');
 
     h2.innerText = name;
@@ -30,13 +24,7 @@ const renderCharacters = async (event) => {
     img.setAttribute('alt', name);
     japaneseNameText.innerText = japaneseName;
     originText.innerText = origin;
-    raceText.innetText = race;
-    genderText.innerText = gender;
-    ageText.innerText = age;
     jobText.innerText = job;
-    heightText.innerText = height;
-    weightText.innerText = weight;
-    statsText.innetText = stats;
     descriptionText.innerText = description;
 
     section.appendChild(clone);

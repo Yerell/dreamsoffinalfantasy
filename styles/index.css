@@ -50,6 +50,9 @@ body {
    line-height: 150%;
    margin-top: 2px;
 }
+
+
+
  #hero, .layer {
 	 min-height: 800px;
 }
@@ -85,29 +88,29 @@ body {
 		 display: block;
 	}
 }
- .tutorial-link {
-	 color: #fff;
-	 font-size: 18px;
-	 text-decoration: underline;
+.platform{
+  
 }
- .tutorial-link:hover {
-	 color: #ede0d5;
-}
- }
 
 
 footer {
   bottom: 0;
   left: 0;
-  position: absolute;
+  position: relative;
   right: 0;
 }
 footer div.social-media-links {
-  background: #323b40;
+  	background-color: #123;
     height: 70px;
   overflow: hidden;
   padding-bottom: 4px;
   text-align: center;
+  color:black;
+	background-image: linear-gradient(to bottom, rgb(255, 255, 255), transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px rgba(125, 243, 214, 0.705);
+	font-size: 1.5em;
+	font-weight: 300;
 }
 footer div.social-media-links ul {
   margin: 0;
@@ -142,7 +145,7 @@ footer div.social-media-links a svg.glow circle {
 }
 footer div.social-media-links a svg path,
 footer div.social-media-links a svg circle {
-  fill: #0096a1;
+  fill: #000000;
   transition: 0.2s ease-in;
 }
 footer div.social-media-links a:hover {
@@ -155,11 +158,11 @@ footer div.social-media-links a:hover svg.glow {
 }
 footer div.social-media-links a:hover svg.glow path,
 footer div.social-media-links a:hover svg.glow circle {
-  fill: rgba(14, 186, 199, 0.6);
+  fill: rgba(125, 207, 212, 0.6);
 }
 footer div.social-media-links a:hover svg path,
 footer div.social-media-links a:hover svg circle {
-  fill: #0ebac7;
+  fill:  rgba(125, 243, 214, 0.705);
 }
 
 .ff1 {
@@ -169,6 +172,28 @@ height: 50%;
 width: 50%;
 
 }
+.ffx{
+margin-right: 20px;
+padding-bottom: 30px;
+height: 50%;
+width: 50%;
+}
+
+.ffvii{
+margin-right: 20px;
+padding-bottom: 30px;
+height: 50%;
+width: 50%;
+  
+}
+
+.ffxvi{
+margin-right: 20px;
+padding-bottom: 30px;
+height: 50%;
+width: 50%;
+  
+}
 
 
 .fflogo {
@@ -177,5 +202,68 @@ padding-top: 30px;
 height: 30%;
 width: 30%;
 
-
 }
+
+
+/* Appearance */
+.links {
+	background-color: #123;
+	background-image: linear-gradient(to bottom, rgb(255, 255, 255), transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px rgba(125, 243, 214, 0.705);
+	font-size: 1.5em;
+	font-weight: 300;
+}
+.links > a {
+	color: rgb(0, 0, 0);
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.links > a:hover {
+	background: #ffffff06;
+	color: #adf;
+}
+.links > .line {
+	background: #68a;
+	height: 1px;
+	pointer-events: none;
+}
+
+/* The Magic */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.links > a:hover ~ .line {
+	opacity: 1;
+}
+
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
