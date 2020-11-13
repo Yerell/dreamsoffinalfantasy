@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+}
+
+.home {
+  padding: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.home article header {
+  display: flex;
+}
+
+.home article header picture {
+  max-width: 33%;
+}
+
+.home article section {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.home article section picture {
+  width: 33%;
+  margin-right: 1.25rem;
+}
