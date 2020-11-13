@@ -2,11 +2,10 @@
 @import './global.css';
 
 
-
-ody {
+body {
 	 padding: 0;
 	 margin: 0;
-	 background-color: #130d0a;
+	 background-color: #000000;
 	 font-family: 'Playfair Display', serif;
 	 color: #fff;
 }
@@ -29,7 +28,7 @@ ody {
 }
  #hero-mobile {
 	 display: none;
-	 background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom / cover;
+	 background: url("https://i.postimg.cc/4f7Mc74j/baneer-dreams-of-ff.png") no-repeat center bottom / cover;
 	 height: 320px;
 }
  .first-section {
@@ -40,13 +39,16 @@ ody {
 	 text-align: center;
 }
  h1 {
+   text-align: center;
 	 line-height: 120%;
-	 margin-bottom: 30px;
+	 margin-bottom: 1px;
 }
  p {
-	 color: #ede0d5;
+   padding-top: 1px;
+   color: #ede0d5;
 	 font-size: 18px;
-	 line-height: 150%;
+   line-height: 150%;
+   margin-top: 2px;
 }
  #hero, .layer {
 	 min-height: 800px;
@@ -59,20 +61,22 @@ ody {
 	 background-position: left bottom;
 }
  .layer-2 {
-   background-image: url('https://i.postimg.cc/9fS9ZG7z/Final-Fantasy-Logo-PNG-Transparent-white-Image.png');
-   background-position: center;
+   background-image: url('https://i.postimg.cc/6pkVJSr6/Final-Fantasy-Logo-PNG-Transparent-white-LARGER-Image.png');
+   background-position: center top;
   
 }
  .layer-3 {
    background-image: url('https://lh3.googleusercontent.com/proxy/hkXOGLIPm6p6chEQcApzRMVMZ1UYHjbhX9UlEruEKAk-l0rFKZhLWZlyopSogA7dODX2obC0OcKrp1ciwt4WAccmEI0Y6xc7c8fHL0vy_1idMozYoVDundasgnRaL9_Y7IS2IEZ6');
-	 background-position: right bottom;
+	 background-position: right bottom ;
 }
  .layer-4 {
 	 background-image: url('-');
-}
+ background-position: bottom ;
+  }
  .layer-overlay {
-	 background-image: url('-);
+	 background-image: url ('-') ;
 }
+
  @media only screen and (max-width: 768px) {
 	 #hero {
 		 display: none;
@@ -92,59 +96,86 @@ ody {
  }
 
 
-/*
-.webmadewell {
-  background-color: white;
-}
-body {
-  margin: 0;
-}
-.sample-header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-image: url("https://images.hdqwalls.com/wallpapers/final-fantasy-xv-windows-edition-4k-i7.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.sample-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
+footer {
   bottom: 0;
   left: 0;
-  background-color: MidnightBlue;
-  opacity: 0.3;
+  position: absolute;
+  right: 0;
 }
-.sample-header-section {
+footer div.social-media-links {
+  background: #323b40;
+    height: 70px;
+  overflow: hidden;
+  padding-bottom: 4px;
+  text-align: center;
+}
+footer div.social-media-links ul {
+  margin: 0;
+  padding: 0;
+}
+footer div.social-media-links li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+footer div.social-media-links a {
+  border-bottom: 0px solid rgba(0, 0, 0, 0.95);
+  border-radius: 4px;
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0), 0 6px 8px rgba(0, 0, 0, 0), 0 24px 24px rgba(0, 0, 0, 0), 0 36px 36px rgba(0, 0, 0, 0), 0 64px 64px rgba(0, 0, 0, 0), 0 64px 128px rgba(0, 0, 0, 0), 0 120px 0 rgba(0, 0, 0, 0), 0 86px 8px 6px rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 20px;
+  padding: 20px;
   position: relative;
-  padding: 15% 0 10%;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  font-family: "Montserrat", sans-serif;
+  transition: 0.2s ease-in;
+  width: 30px;
 }
-h1 {
-  font-weight: 500;
+footer div.social-media-links a svg {
+  left: 20px;
+  position: absolute;
+  top: 20px;
+  height: 30px;
+  width: 30px;
 }
-h2 {
-  font-weight: 400;
+footer div.social-media-links a svg.glow path,
+footer div.social-media-links a svg.glow circle {
+  fill: rgba(0, 0, 0, 0);
 }
-.sample-section-wrap {
-  position: relative;
-  background-color: white;
+footer div.social-media-links a svg path,
+footer div.social-media-links a svg circle {
+  fill: #0096a1;
+  transition: 0.2s ease-in;
 }
-.sample-section {
-  position: relative;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px;
+footer div.social-media-links a:hover {
+  transform: translateY(-4px);
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.05), 0 24px 24px rgba(0, 0, 0, 0.05), 0 36px 36px rgba(0, 0, 0, 0.05), 0 64px 64px rgba(0, 0, 0, 0.15), 0 64px 128px rgba(0, 0, 0, 0.15), 0 86px 8px 6px rgba(14, 186, 199, 0.25), 0 83px 4px 0px rgba(14, 186, 199, 0.95);
+}
+footer div.social-media-links a:hover svg.glow {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+  filter: blur(2px);
+}
+footer div.social-media-links a:hover svg.glow path,
+footer div.social-media-links a:hover svg.glow circle {
+  fill: rgba(14, 186, 199, 0.6);
+}
+footer div.social-media-links a:hover svg path,
+footer div.social-media-links a:hover svg circle {
+  fill: #0ebac7;
 }
 
-*/
+.ff1 {
+margin-right: 20px;
+padding-bottom: 30px;
+height: 50%;
+width: 50%;
+
+}
+
+
+.fflogo {
+position: relative;
+padding-top: 30px;
+height: 30%;
+width: 30%;
+
+
+}
