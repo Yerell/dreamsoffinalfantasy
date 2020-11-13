@@ -3,6 +3,11 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
   font-size: 100%;
 }
 
@@ -13,5 +18,5 @@ picture {
 img {
   display: block;
   height: auto;
-  max-width: 100%;
+  width: 100%;
 }
