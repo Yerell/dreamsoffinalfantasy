@@ -14,3 +14,14 @@ export const getAllMonsters = async () => {
   const response = await fetch(`${BASE_URL}/monsters`);
   return await response.json();
 };
+
+
+export const getMonstersSearch = async (search) => {
+  const response = await fetch(`${BASE_URL}/monsters/search?name=${search}`);
+  return await response.json();
+};
+
+export const getCharactersSearch = async (search) => {
+  const response = await fetch(`${BASE_URL}/characters/search?name=${search}`);
+  return await response.json();
+};

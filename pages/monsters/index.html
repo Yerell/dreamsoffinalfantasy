@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../styles/index.css" />
     <title>Dreams of Final Fantasy | Monsters</title>
+    
+  
   </head>
   <body>
+
     <header>
       <img class="fflogo" src="https://i.postimg.cc/zfRTj86b/rosalogo.png" />
       <nav class="links" style="--items: 5">
@@ -18,19 +21,20 @@
         <span class="line"></span>
       </nav>
     </header>
-    <main>
-      <section>
-        <template id="monster-template">
+    <h1 class="monsterTittle">BESTIARY</h1>
+    <input type="search" placeholder="Search" id="buscadorMonster" />
+     <button id="monsterSearch" type="search">Kupó!</button>
+     <h1 id=name></h1>
+<img id="monsterPicture"/>
+    <main class="overworld" >
+       <template id="monster-template">
           <article>
+         <div class="globeMonster">
             <h2></h2>
             <picture>
               <img class="monsterPicture" src="" alt="" />
             </picture>
-            <dl>
-              <dt>Name</dt>
-              <dd id="name"></dd>
-              <dt>Japanese Name</dt>
-              <dd id="japaneseName"></dd>
+            <dl class="categoriesMonsters">
               <dt>Elemental Affinity</dt>
               <dd id="elementalAffinity"></dd>
               <dt>Elemental Weakness</dt>
@@ -43,15 +47,17 @@
               <dd id="attack"></dd>
               <dt>Defense</dt>
               <dd id="defense"></dd>
-              <dt>Picture</dt>
-              <dd id="picture"></dd>
               <dt>Description</dt>
               <dd id="description"></dd>
             </dl>
+            </div>
           </article>
         </template>
+ <section class="orderApi">
+       
       </section>
     </main>
+    
 <h2 class="api">
   Powered by <a class="moogleapi" href="https://www.moogleapi.com/" target="_blank"><img src="https://i.postimg.cc/R06jbFLr/message-Image-1605286697519.png" alt="Moogleapi" /></a>
   </h2>

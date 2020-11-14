@@ -2,6 +2,18 @@ body {
   background-color: black;
 }
 
+.titulo{
+text-align: center;
+
+
+}
+
+.subtitulo{
+text-align: center;
+margin-right: 2%;
+min-width: 200px;
+}
+
 .home {
   padding: 1.5rem;
   max-width: 120000px;
@@ -33,6 +45,11 @@ body {
 
 }
 
+.sakaguchi{
+width:300px ;
+
+}
+
 .ff1{
 width: 240px;
 height: 240px;
@@ -40,23 +57,22 @@ height: 240px;
 
 
 .ff2{
-    margin-left: 15rem;
-
+ margin: auto;
 width: 1100px;
 height: 640px;
 }
 .chocobo{
-     margin-left: 47rem;
+margin: auto;
 width: 300px;
 height: 265px;
 }
 
 
 .api {
-  margin-top: 10rem;
-  margin-left:48rem;
+margin: auto;
 text-align: center;
 width: 300px;
 height: 265px;
 
 }
+

@@ -1,4 +1,5 @@
 import { getAllCharacters } from './fetch-api.js';
+import { getCharactersSearch } from './fetch-api.js';
 
 // Element
 const template = document.querySelector('#character-template');
@@ -6,12 +7,13 @@ const section = document.querySelector('section');
 
 // Ejecucion
 
-const renderCharacters = async (event) => {
-  const characters = await getAllCharacters();
+const renderCharacters = async (characters) => {
+
+  section.innerHTML = "";
+
+
 
   characters.forEach((character) => {
-    console.log({ character });
-
     const {
       name,
       japaneseName,
@@ -29,7 +31,6 @@ const renderCharacters = async (event) => {
     const clone = template.content.cloneNode(true);
     const h2 = clone.querySelector('h2');
     const img = clone.querySelector('img');
-    const japaneseNameText = clone.querySelector('#japaneseName');
     const originText = clone.querySelector('#origin');
     const jobText = clone.querySelector('#job');
     const descriptionText = clone.querySelector('#description');
@@ -37,7 +38,6 @@ const renderCharacters = async (event) => {
     h2.innerText = name;
     img.setAttribute('src', pictures[0].url);
     img.setAttribute('alt', name);
-    japaneseNameText.innerText = japaneseName;
     originText.innerText = origin;
     jobText.innerText = job;
     descriptionText.innerText = description;
@@ -46,5 +46,26 @@ const renderCharacters = async (event) => {
   });
 };
 
+
+
+
+
+
+const onLoaded1 = async (event) => {
+  const characters = await getAllCharacters();
+  renderCharacters(characters);
+}
+
+
+const onSearch1 = async (event) => {
+  event.preventDefault();
+  const texto = document.getElementById("buscadorHeroVillains").value;
+  const characters = await getCharactersSearch(texto);
+  
+  renderCharacters(characters);
+  
+}
+
 // Event
-window.addEventListener('DOMContentLoaded', renderCharacters);
+window.addEventListener('DOMContentLoaded', onLoaded1);
+document.getElementById("characterSearch").addEventListener('click', onSearch1);
