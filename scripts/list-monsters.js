@@ -1,4 +1,5 @@
 import { getAllMonsters } from './fetch-api.js';
+import { getMonstersSearch } from './fetch-api.js';
 
 // Element
 const template = document.querySelector('#monster-template');
@@ -6,15 +7,27 @@ const section = document.querySelector('section');
 
 // Ejecucion
 
-const renderMonsters = async (event) => {
-  const monsters = await getAllMonsters();
+const renderMonsters = async (monsters) => {
+
+  section.innerHTML = "";
+
+
 
   monsters.forEach((monster) => {
-    const { name, japaneseName, elementalAffinity, elementalWeakness, hitPoints, manaPoints, attack, defense, picture, description  } = monster;
+    const { name,
+      japaneseName,
+      elementalAffinity,
+      elementalWeakness,
+      hitPoints,
+      manaPoints,
+      attack,
+      defense,
+      picture,
+      description,
+    } = monster;
     const clone = template.content.cloneNode(true);
     const h2 = clone.querySelector('h2');
     const img = clone.querySelector('img');
-    const japaneseNameText = clone.querySelector('#japaneseName');
     const elementalAffinityText = clone.querySelector('#elementalAffinity');
     const elementalWeaknessText = clone.querySelector('#elementalWeakness');
     const hitPointsText = clone.querySelector('#hitPoints');
@@ -26,7 +39,6 @@ const renderMonsters = async (event) => {
     h2.innerText = name;
     img.setAttribute('src', picture);
     img.setAttribute('alt', name);
-    japaneseNameText.innerText = japaneseName;
     elementalAffinityText.innerText = elementalAffinity;
     elementalWeaknessText.innerText = elementalWeakness;
     hitPointsText.innerText = hitPoints;
@@ -39,5 +51,24 @@ const renderMonsters = async (event) => {
   });
 };
 
+
+
+
+const onLoaded2 = async (event) => {
+  const monsters = await getAllMonsters();
+  renderMonsters(monsters);
+}
+
+
+const onSearch2 = async (event) => {
+  event.preventDefault();
+  const texto = document.getElementById("buscadorMonster").value;
+  const monsters = await getMonstersSearch(texto);
+  
+  renderMonsters(monsters);
+  
+}
 // Event
-window.addEventListener('DOMContentLoaded', renderMonsters);
+window.addEventListener('DOMContentLoaded', onLoaded2);
+
+document.getElementById("monsterSearch").addEventListener('click', onSearch2);

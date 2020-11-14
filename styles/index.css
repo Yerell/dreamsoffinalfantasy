@@ -7,6 +7,33 @@
 @import './characters.css';
 @import './monsters.css';
 
+
+.fflogo {
+margin-bottom: 2%;
+
+}
+
+
 #content {
   background-color: #000000;
 }
+
+
+.orderApi{
+margin: 6rem;
+padding: 1%;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 5%;
+color:white;
+}
+
+
+
+.fflogo {
+
+width: 1400px;
+margin  : auto;
+border-image: initial;
+}
+
+
