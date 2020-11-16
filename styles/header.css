@@ -39,7 +39,7 @@
   background-position: center top;
 }
 .layer-3 {
-  background-image: url('https://png2.cleanpng.com/sh/d698750c2f6e533aa0c2b7e2ef18a860/L0KzQYm3U8MyN6duiZH0aYP2gLBuTfZqdpJxRdhqboTkg8q0lvlqNaNqhdN0ZT3necT6ifRqaV41SaQ2Znnxcb20hvFvfJJ4RdhybnHvPbfojwRie6oyTdNsMEC3RLKBWcRkPmQzS6YAMUi3QIW4VcIzPWQ4TKc5NUa1RHB3jvc=/kisspng-final-fantasy-vii-remake-dissidia-012-final-fantas-final-fantasy-5ac0044a894c63.3451840415225334505624.png');
+  background-image: url('https://i.ibb.co/M5KfDHG/kisspng-final-fantasy-vii-remake-dissidia-012-final-fantas-final-fantasy-5ac0044a894c63-345184041522.png');
   background-position: right bottom;
   background-size: 37%;
    margin-left: 9%;
@@ -67,6 +67,7 @@
   background-image: linear-gradient(to bottom, rgb(255, 255, 255), transparent);
   border-bottom: 1px solid #0003;
   box-shadow: 0 0 32px rgba(125, 243, 214, 0.705);
+  font-family: 'Times New Roman', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.5em;
   font-weight: 300;
 }
