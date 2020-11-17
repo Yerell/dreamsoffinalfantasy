@@ -22,12 +22,7 @@ Open with Live Server in Index.html
 ## Wireframe
 Marvellapp allowed to make a preliminary design of the page
 
- https://marvelapp.com/prototype/94ae0bd
-(https://marvelapp.com/prototype/94ae0bd)
-![Home](https://i.ibb.co/nfrbwHN/wireframe.png)
-![Catch Pokemon](https://i.ibb.co/Ycq5kSp/2020-10-16-12-02-23-React-to-Pok-mon-APIs-Image-2.png)
-![Index](https://i.ibb.co/c28QDWW/2020-10-16-12-03-03-React-to-Pok-mon-APIs-Image-4.png)
-![Index](https://i.ibb.co/3pQCSHq/2020-10-16-12-02-48-React-to-Pok-mon-APIs-Image-3.png)
+
 
 ## Next steps
 - Combine the selection made initially to be able to return data in the characters and monsters with queries to the API.
