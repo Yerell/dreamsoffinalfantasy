@@ -24,7 +24,7 @@ margin-top: 150px;
               0 -2px #9c9a9c,
               -2px 0 #7b757b,
               0 2px #424542;
-  width: 1000px;
+  max-width: 1000px;
   padding: 5px 10px;
   margin-bottom: 50px;
     font-family: Verdana, sans-serif;
@@ -69,6 +69,7 @@ color: white;
 }
 
 
+
 #description{
 color: white;
 
@@ -76,5 +77,6 @@ color: white;
 
 .orderApi1{
 margin-left: 6rem;
+margin-right: 6rem;
 
 }
