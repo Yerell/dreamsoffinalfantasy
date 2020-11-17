@@ -18,7 +18,11 @@
   display: none;
   background: url('https://i.postimg.cc/qqrjV73G/baneer-dreams-of-ff.png')
     no-repeat center bottom / cover;
-  height: 320px;
+  display: none;
+  background: url('https://i.postimg.cc/qqrjV73G/baneer-dreams-of-ff.png')
+    no-repeat center bottom / cover;
+  height: 220px;
+width: 100%;
 }
 
 #hero,
@@ -27,6 +31,7 @@
 }
 .layer-bg {
   background-image: url('https://i.postimg.cc/YMLB1qtB/ff7-remake-01-bkjj8vl90.png');
+  
 }
 .layer-1 {
   background-image: url('https://cache-eu.finalfantasy.com/uploads/content/file/2020/06/29/3103/200717_topics_ff7r_4_2.png');
@@ -52,7 +57,7 @@
   background-image: url ('-');
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   #hero {
     display: none;
   }
@@ -101,6 +106,14 @@
   grid-template-columns: repeat(var(--items), 1fr);
   position: relative;
 }
+
+@media (max-width: 600px)  {
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .links > .line {
   opacity: 0;
   transition: all 0.5s;

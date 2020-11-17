@@ -1,3 +1,4 @@
+
 .monsterTittle{
 text-align: center;
 margin-top: 4%;
@@ -9,13 +10,19 @@ margin-bottom: 4%;
   background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
   background-size: 24px;
   color: rgb(147, 233, 176);
-  width: 500px;
+  max-width: 500px;
+  width: calc(100% - 120px);
   border: transparent;
   border-bottom: solid 1px rgb(255, 255, 255);
   padding: 10px 10px 10px 30px;
   outline: none;
 }
 
+
+.monsterName{
+text-align: center;
+
+}
 
 .searchImg{
   background-color: #123;
@@ -37,11 +44,6 @@ margin-bottom: 4%;
 
 }
 
-
-.globeMonster{
- width: 600px;
-
-}
 .monsterPicture {
 width: 210px;
 height: 200px;
@@ -58,7 +60,9 @@ margin: auto;
               0 -2px #9c9a9c,
               -2px 0 #7b757b,
               0 2px #424542;
-  width: 500px;
+   max-width: 400px;
+  min-width: 400px;
+  width: calc(100% - 120px);
   padding: 5px 10px;
   margin: 50px 50px;
       font-family: Verdana, sans-serif;
@@ -115,3 +119,4 @@ color: white ;
 color: white ;
 
 }
+

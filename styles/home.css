@@ -23,14 +23,18 @@ min-width: 200px;
 
 .home article header {
   display: flex;
-      margin-left: 19rem;
-      margin-right: 19rem;
-      margin-top: 6rem;
-      margin-bottom: 6rem;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
-.home article header picture {
-  max-width: 33%;
+@media(max-width: 900px) {
+  .home article header {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .home article section {
@@ -40,14 +44,37 @@ min-width: 200px;
   margin-bottom: 1.25rem;
 }
 
+@media(max-width: 1100px) {
+  .home article section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .home article section picture {
   margin-right: 3rem;
+}
 
+@media(max-width: 1100px) {
+  .home article section picture {
+    margin-right: 0;
+  }
 }
 
 .sakaguchi{
-width:300px ;
+  margin: auto;
+width: 280px;
+height: 280px;
+}
 
+
+.cita{
+ display: flex;
+ flex-direction: column;
+  margin-left: 4rem;
+    margin-right: 4rem;
+  margin-bottom: 1.25rem;
+  max-width: 400px;
 }
 
 .ff1{
@@ -58,8 +85,8 @@ height: 240px;
 
 .ff2{
  margin: auto;
-width: 1100px;
-height: 640px;
+  max-width: 1100px;
+  max-height: 640px;
 }
 .chocobo{
 margin: auto;
@@ -73,8 +100,8 @@ margin: auto;
 padding-top: 180px;
 margin-bottom: 130PX;
 text-align: center;
-width: 300px;
-height: 265px;
+max-width: 300px;
+max-height: 265px;
 
 }
 
