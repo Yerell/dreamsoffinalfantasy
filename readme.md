@@ -11,7 +11,7 @@ For data collection a Final Fantasy API  has been used. [Moogleapi](https://www.
 
 `git clone git@github.com:Yerell/dreamsoffinalfantasy.git
 
-cd FinalFantasy-Project
+cd FinalFantsy-Project
 
 code .
 
