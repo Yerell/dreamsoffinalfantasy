@@ -39,4 +39,4 @@ Marvellapp allowed to make a preliminary design of the page
 
 
 ## Authorship
-Yerell Bernardino Murillo
+Yerell
